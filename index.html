@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>RPS Game</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -14,32 +14,39 @@
     <div class="choice" id="rock">
       <img src="./images/rock.png" /> 
     </div>
-
     <div class="choice" id="paper">
       <img src="./images/paper.png" />
     </div>
-
     <div class="choice" id="scissors">
-        <img src="./images/scissors.png" />
+      <img src="./images/scissors.png" />
     </div>
   </div>
 
   <div class="score-board">
     <div class="score">
-      <p id="user"> 0 </p>
-      <p id="texxt"> You </p>
+      <p id="user">0</p>
+      <p id="texxt">You</p>
     </div>
-
     <div class="score">
-      <p id="computer"> 0 </p>
-      <p id="texxt"> Comp </p>
+      <p id="computer">0</p>
+      <p id="texxt">Comp</p>
     </div>
   </div>
 
   <div class="msg-container">
-    <p id="msg"> Play your next move! </p>
+    <p id="msg">Play your next move!</p>
   </div>
 
+  <!-- Main App Script -->
   <script src="app.js" type="module" defer></script>
+
+  <!-- ✅ Vercel Analytics Only on Production -->
+  <script type="module">
+    if (location.hostname.includes("vercel.app")) {
+      import("https://unpkg.com/@vercel/analytics").then(({ Analytics }) => {
+        Analytics();
+      });
+    }
+  </script>
 </body>
 </html>
