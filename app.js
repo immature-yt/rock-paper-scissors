@@ -1,4 +1,3 @@
-import { Analytics } from "@vercel/analytics/next"
 let userScore = 0;
 let compScore = 0;
 
@@ -25,7 +24,7 @@ const playGame = (userChoice) => {
 
     if (userChoice === compChoice) {
         msg.innerText = "Draw !";
-    } else if ( (userChoice === "rock" && compChoice === "scissors") || (userChoice === "paper" && compChoice === "rock") || (userChoice === "scissors" && compChoice === "papers")) {
+    } else if ( (userChoice === "rock" && compChoice === "scissors") || (userChoice === "paper" && compChoice === "rock") || (userChoice === "scissors" && compChoice === "paper")) {
         msg.innerText = "You Won !";
         userScore++;
         userS.innerText = userScore;
