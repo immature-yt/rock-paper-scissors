@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next"
 let userScore = 0;
 let compScore = 0;
 
