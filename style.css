@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+
+#heading{
+  font-family: "Bangers", system-ui;
+  letter-spacing: 3px;
+  color: white;
+  text-align: center;
+  font-size: 300%;
+  padding-top: 25px;
+  background-color: teal;
+}
+
+.choice {
+    height: 165px;
+    width: 165px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 5rem;
+}
+
+.choice:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    gap: 5rem;
+}
+
+#user, #computer {
+    font-size: 4rem;
+    color: white;
+}
+
+#msg {
+    text-align: center;
+    background-color: teal;
+    color: white;
+    font-size: 2rem;
+    padding: 1rem;
+    display: inline;
+    border-radius: 1rem;
+    color: white(53, 193, 72);
+
+}
+
+.msg-container {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+#texxt {
+    color: white;
+}
